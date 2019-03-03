@@ -1,0 +1,536 @@
+2018-04-23 09:51:23  INFO ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+2018-04-23 09:51:23  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Mon Apr 23 09:51:23 CST 2018]; root of context hierarchy
+2018-04-23 09:51:23  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [E:\毕设\hj\hpetshop-rest\target\classes\spring\applicationContext-dao.xml]
+2018-04-23 09:51:25  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [E:\毕设\hj\hpetshop-rest\target\classes\spring\applicationContext-service.xml]
+2018-04-23 09:51:27  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [E:\毕设\hj\hpetshop-rest\target\classes\resource\jdbc.properties]
+2018-04-23 09:51:27  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [E:\毕设\hj\hpetshop-rest\target\classes\resource\redis.properties]
+2018-04-23 09:51:27  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-23 09:51:31  INFO ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 8410 ms
+2018-04-23 09:51:31  INFO DispatcherServlet.initServletBean(484) | FrameworkServlet 'hpetshop-rest': initialization started
+2018-04-23 09:51:31  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'hpetshop-rest-servlet': startup date [Mon Apr 23 09:51:31 CST 2018]; parent: Root WebApplicationContext
+2018-04-23 09:51:31  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2018-04-23 09:51:31  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/list/{categoryId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.rest.controller.ContentController.getContent(java.lang.Long)
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/itemcat/all],methods=[],params=[],headers=[],consumes=[],produces=[application/json;charset=utf-8],custom=[]}" onto public java.lang.String com.hpetshop.rest.controller.ItemCatController.getCatList(java.lang.String)
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/info/itemBaseInfo/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.rest.controller.ItemController.getItem(long)
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/info/itemDescInfo/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.rest.controller.ItemDescController.getItemDesc(long)
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/info/itemParamItemInfo/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.rest.controller.ItemParamItemController.getItemParamItem(java.lang.Long)
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/redis/cache/sync/content/{contentId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.rest.controller.RedisServiceController.hDelRedisContent(java.lang.Long)
+2018-04-23 09:51:32  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/redis/cache/sync/itemCat/{parentId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.rest.controller.RedisServiceController.hDelRedisItemCat(java.lang.Long)
+2018-04-23 09:51:32  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-rest-servlet': startup date [Mon Apr 23 09:51:31 CST 2018]; parent: Root WebApplicationContext
+2018-04-23 09:51:32  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-rest-servlet': startup date [Mon Apr 23 09:51:31 CST 2018]; parent: Root WebApplicationContext
+2018-04-23 09:51:32  INFO DispatcherServlet.initServletBean(503) | FrameworkServlet 'hpetshop-rest': initialization completed in 980 ms
+2018-04-23 09:57:15  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 09:57:20  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@738436f5, com.hpetshop.pojo.HpContent@6d344a12, com.hpetshop.pojo.HpContent@3eb1bc1]
+2018-04-23 09:57:20  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 09:57:24  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@2233ddca, com.hpetshop.pojo.HpContent@7b260a50, com.hpetshop.pojo.HpContent@7e6f4959, com.hpetshop.pojo.HpContent@3c38b2e8, com.hpetshop.pojo.HpContent@2e69bc3b]
+2018-04-23 09:58:00  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products1.html'>狗狗用品/食品/玩具</a>
+2018-04-23 09:58:00  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/1.html
+2018-04-23 09:58:04  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/2.html
+2018-04-23 09:58:08  INFO ItemCatService.getItemCatList(136) | 子节点的url为/products/22.html|狗狗沐浴露
+2018-04-23 09:58:08  INFO ItemCatService.getItemCatList(139) | 子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 09:58:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 09:58:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@28120a16]
+2018-04-23 09:58:08  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/4.html
+2018-04-23 09:58:12  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:12  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@28120a16, com.hpetshop.rest.dto.CatNodeDTO@69229a01]
+2018-04-23 09:58:12  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/5.html
+2018-04-23 09:58:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@28120a16, com.hpetshop.rest.dto.CatNodeDTO@69229a01, com.hpetshop.rest.dto.CatNodeDTO@2bb93958]
+2018-04-23 09:58:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@28120a16, com.hpetshop.rest.dto.CatNodeDTO@69229a01, com.hpetshop.rest.dto.CatNodeDTO@2bb93958]
+2018-04-23 09:58:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d63d6d5]
+2018-04-23 09:58:16  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products6.html'>猫猫用品/食品/玩具</a>
+2018-04-23 09:58:16  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/6.html
+2018-04-23 09:58:20  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/7.html
+2018-04-23 09:58:24  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:24  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@61d251ba]
+2018-04-23 09:58:24  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/8.html
+2018-04-23 09:58:28  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:28  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@61d251ba, com.hpetshop.rest.dto.CatNodeDTO@2e41ec1]
+2018-04-23 09:58:28  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/9.html
+2018-04-23 09:58:32  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:32  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@61d251ba, com.hpetshop.rest.dto.CatNodeDTO@2e41ec1, com.hpetshop.rest.dto.CatNodeDTO@5c700d04]
+2018-04-23 09:58:32  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@61d251ba, com.hpetshop.rest.dto.CatNodeDTO@2e41ec1, com.hpetshop.rest.dto.CatNodeDTO@5c700d04]
+2018-04-23 09:58:32  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d63d6d5, com.hpetshop.rest.dto.CatNodeDTO@4066b105]
+2018-04-23 09:58:32  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products10.html'>小鱼/鱼缸/鱼食</a>
+2018-04-23 09:58:32  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/10.html
+2018-04-23 09:58:36  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/11.html
+2018-04-23 09:58:40  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:40  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1ea12c53]
+2018-04-23 09:58:40  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/12.html
+2018-04-23 09:58:45  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:45  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1ea12c53, com.hpetshop.rest.dto.CatNodeDTO@2b82fddf]
+2018-04-23 09:58:45  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/13.html
+2018-04-23 09:58:49  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:49  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1ea12c53, com.hpetshop.rest.dto.CatNodeDTO@2b82fddf, com.hpetshop.rest.dto.CatNodeDTO@66e99893]
+2018-04-23 09:58:49  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@1ea12c53, com.hpetshop.rest.dto.CatNodeDTO@2b82fddf, com.hpetshop.rest.dto.CatNodeDTO@66e99893]
+2018-04-23 09:58:49  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d63d6d5, com.hpetshop.rest.dto.CatNodeDTO@4066b105, com.hpetshop.rest.dto.CatNodeDTO@72200fad]
+2018-04-23 09:58:49  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products14.html'>小鸟/鸟笼/鸟食</a>
+2018-04-23 09:58:49  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/14.html
+2018-04-23 09:58:53  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/15.html
+2018-04-23 09:58:57  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:58:57  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4401d9b9]
+2018-04-23 09:58:57  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/16.html
+2018-04-23 09:59:01  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:59:01  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4401d9b9, com.hpetshop.rest.dto.CatNodeDTO@7cdf763c]
+2018-04-23 09:59:01  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/17.html
+2018-04-23 09:59:05  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:59:05  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4401d9b9, com.hpetshop.rest.dto.CatNodeDTO@7cdf763c, com.hpetshop.rest.dto.CatNodeDTO@1510082]
+2018-04-23 09:59:05  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@4401d9b9, com.hpetshop.rest.dto.CatNodeDTO@7cdf763c, com.hpetshop.rest.dto.CatNodeDTO@1510082]
+2018-04-23 09:59:05  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d63d6d5, com.hpetshop.rest.dto.CatNodeDTO@4066b105, com.hpetshop.rest.dto.CatNodeDTO@72200fad, com.hpetshop.rest.dto.CatNodeDTO@6cf8577a]
+2018-04-23 09:59:05  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products18.html'>宠物指南/手册/读物</a>
+2018-04-23 09:59:05  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/18.html
+2018-04-23 09:59:09  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/19.html
+2018-04-23 09:59:13  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:59:13  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@335f949e]
+2018-04-23 09:59:13  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/20.html
+2018-04-23 09:59:17  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:59:17  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@335f949e, com.hpetshop.rest.dto.CatNodeDTO@7d4527a0]
+2018-04-23 09:59:17  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/21.html
+2018-04-23 09:59:21  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 09:59:21  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@335f949e, com.hpetshop.rest.dto.CatNodeDTO@7d4527a0, com.hpetshop.rest.dto.CatNodeDTO@402c8ee0]
+2018-04-23 09:59:21  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@335f949e, com.hpetshop.rest.dto.CatNodeDTO@7d4527a0, com.hpetshop.rest.dto.CatNodeDTO@402c8ee0]
+2018-04-23 09:59:21  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d63d6d5, com.hpetshop.rest.dto.CatNodeDTO@4066b105, com.hpetshop.rest.dto.CatNodeDTO@72200fad, com.hpetshop.rest.dto.CatNodeDTO@6cf8577a, com.hpetshop.rest.dto.CatNodeDTO@2d58350a]
+2018-04-23 09:59:21  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@d63d6d5, com.hpetshop.rest.dto.CatNodeDTO@4066b105, com.hpetshop.rest.dto.CatNodeDTO@72200fad, com.hpetshop.rest.dto.CatNodeDTO@6cf8577a, com.hpetshop.rest.dto.CatNodeDTO@2d58350a]
+2018-04-23 09:59:21  INFO ItemCatController.getCatList(47) | 返回后的jsonp字符串为category.getDataService({"data":[{"n":"<a href='/products1.html'>狗狗用品/食品/玩具</a>","u":"/products/1.html","i":[{"n":"狗狗用品","u":"/products/2.html","i":["/products/22.html|狗狗沐浴露"]},{"n":"狗狗食品","u":"/products/4.html","i":[]},{"n":"狗狗玩具","u":"/products/5.html","i":[]}]},{"n":"<a href='/products6.html'>猫猫用品/食品/玩具</a>","u":"/products/6.html","i":[{"n":"猫猫用品","u":"/products/7.html","i":[]},{"n":"猫猫食品","u":"/products/8.html","i":[]},{"n":"猫猫玩具","u":"/products/9.html","i":[]}]},{"n":"<a href='/products10.html'>小鱼/鱼缸/鱼食</a>","u":"/products/10.html","i":[{"n":"小鱼","u":"/products/11.html","i":[]},{"n":"鱼缸","u":"/products/12.html","i":[]},{"n":"鱼食","u":"/products/13.html","i":[]}]},{"n":"<a href='/products14.html'>小鸟/鸟笼/鸟食</a>","u":"/products/14.html","i":[{"n":"小鸟","u":"/products/15.html","i":[]},{"n":"鸟笼","u":"/products/16.html","i":[]},{"n":"鸟食","u":"/products/17.html","i":[]}]},{"n":"<a href='/products18.html'>宠物指南/手册/读物</a>","u":"/products/18.html","i":[{"n":"宠物指南","u":"/products/19.html","i":[]},{"n":"宠物手册","u":"/products/20.html","i":[]},{"n":"宠物读物","u":"/products/21.html","i":[]}]}]})
+2018-04-23 10:12:58  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:13:02  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@4ece9652, com.hpetshop.pojo.HpContent@5cef09e9, com.hpetshop.pojo.HpContent@5173cfa9]
+2018-04-23 10:13:02  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:13:06  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@2092fd03, com.hpetshop.pojo.HpContent@1220e0aa, com.hpetshop.pojo.HpContent@2c7dc232, com.hpetshop.pojo.HpContent@7458776f, com.hpetshop.pojo.HpContent@5c095415]
+2018-04-23 10:15:07  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:15:11  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@2dd67838, com.hpetshop.pojo.HpContent@5b6ebc0a, com.hpetshop.pojo.HpContent@42fb636b]
+2018-04-23 10:15:11  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:15:15  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@963b8e5, com.hpetshop.pojo.HpContent@71ffc733, com.hpetshop.pojo.HpContent@4f6f1fbd, com.hpetshop.pojo.HpContent@88cda09, com.hpetshop.pojo.HpContent@573e8941]
+2018-04-23 10:15:35  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:15:39  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@abbbb0f, com.hpetshop.pojo.HpContent@2af5db4a, com.hpetshop.pojo.HpContent@730fed4e]
+2018-04-23 10:15:39  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:15:43  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@4b50489d, com.hpetshop.pojo.HpContent@3cf620c, com.hpetshop.pojo.HpContent@242e03c8, com.hpetshop.pojo.HpContent@48fa5206, com.hpetshop.pojo.HpContent@2a1f2d58]
+2018-04-23 10:15:57  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:16:01  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@77ba3a8, com.hpetshop.pojo.HpContent@46356e6e, com.hpetshop.pojo.HpContent@5de51bc4]
+2018-04-23 10:16:01  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:16:05  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@b496c9a, com.hpetshop.pojo.HpContent@178f840, com.hpetshop.pojo.HpContent@2cf23281, com.hpetshop.pojo.HpContent@50d1ca34, com.hpetshop.pojo.HpContent@7d32455f]
+2018-04-23 10:24:08  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:24:12  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@32febc06, com.hpetshop.pojo.HpContent@71ea4811, com.hpetshop.pojo.HpContent@4c218e84]
+2018-04-23 10:24:12  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:24:16  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@5c0673b4, com.hpetshop.pojo.HpContent@2b965d9f, com.hpetshop.pojo.HpContent@1cdc8814, com.hpetshop.pojo.HpContent@5269e7d9, com.hpetshop.pojo.HpContent@26f481d4]
+2018-04-23 10:24:51  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:24:55  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@5c88ad8f, com.hpetshop.pojo.HpContent@113ab6bf, com.hpetshop.pojo.HpContent@25b3be6f]
+2018-04-23 10:24:55  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:24:59  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@14a984f2, com.hpetshop.pojo.HpContent@5573677, com.hpetshop.pojo.HpContent@20b8c15e, com.hpetshop.pojo.HpContent@419f131a, com.hpetshop.pojo.HpContent@329f319e]
+2018-04-23 10:25:25  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:25:29  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@517391ca, com.hpetshop.pojo.HpContent@7a688e8c, com.hpetshop.pojo.HpContent@6666c81c]
+2018-04-23 10:25:29  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:25:33  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@5a2211be, com.hpetshop.pojo.HpContent@72baff2c, com.hpetshop.pojo.HpContent@52c6dc8c, com.hpetshop.pojo.HpContent@7db995c8, com.hpetshop.pojo.HpContent@2318bdf4]
+2018-04-23 10:26:21  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:26:25  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@1954bbc1, com.hpetshop.pojo.HpContent@9f288e5, com.hpetshop.pojo.HpContent@11f9777d]
+2018-04-23 10:26:25  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:26:29  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@13b80c42, com.hpetshop.pojo.HpContent@182ccb2b, com.hpetshop.pojo.HpContent@24ce8073, com.hpetshop.pojo.HpContent@715310e5, com.hpetshop.pojo.HpContent@47a6483]
+2018-04-23 10:30:21  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:30:25  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@23f98800, com.hpetshop.pojo.HpContent@534fca73, com.hpetshop.pojo.HpContent@1b746ec0]
+2018-04-23 10:30:25  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:30:29  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@1ae07497, com.hpetshop.pojo.HpContent@606734a, com.hpetshop.pojo.HpContent@117b025d, com.hpetshop.pojo.HpContent@22d830a2, com.hpetshop.pojo.HpContent@1f60ed8d]
+2018-04-23 10:34:46  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:34:50  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@1d745afe, com.hpetshop.pojo.HpContent@4201e8cd, com.hpetshop.pojo.HpContent@b5b0c96]
+2018-04-23 10:34:50  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:34:54  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@66bc4dd9, com.hpetshop.pojo.HpContent@549b1640, com.hpetshop.pojo.HpContent@11d1ef25, com.hpetshop.pojo.HpContent@6dab6f46, com.hpetshop.pojo.HpContent@121694ea]
+2018-04-23 10:36:16  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:36:19  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products1.html'>狗狗用品/食品/玩具</a>
+2018-04-23 10:36:20  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/1.html
+2018-04-23 10:36:20  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@779a4e2a, com.hpetshop.pojo.HpContent@3381e4be, com.hpetshop.pojo.HpContent@14d0905d]
+2018-04-23 10:36:20  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:36:24  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/2.html
+2018-04-23 10:36:24  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@748529ae, com.hpetshop.pojo.HpContent@52739a45, com.hpetshop.pojo.HpContent@2395524d, com.hpetshop.pojo.HpContent@204e4f7b, com.hpetshop.pojo.HpContent@754424ce]
+2018-04-23 10:36:28  INFO ItemCatService.getItemCatList(136) | 子节点的url为/products/22.html|狗狗沐浴露
+2018-04-23 10:36:28  INFO ItemCatService.getItemCatList(139) | 子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:36:28  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:36:28  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@26ca074f]
+2018-04-23 10:36:28  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/4.html
+2018-04-23 10:36:32  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:36:32  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@26ca074f, com.hpetshop.rest.dto.CatNodeDTO@44b52cc3]
+2018-04-23 10:36:32  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/5.html
+2018-04-23 10:36:36  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:36:36  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@26ca074f, com.hpetshop.rest.dto.CatNodeDTO@44b52cc3, com.hpetshop.rest.dto.CatNodeDTO@4568f00c]
+2018-04-23 10:36:36  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@26ca074f, com.hpetshop.rest.dto.CatNodeDTO@44b52cc3, com.hpetshop.rest.dto.CatNodeDTO@4568f00c]
+2018-04-23 10:36:36  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6c67c76d]
+2018-04-23 10:36:36  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products6.html'>猫猫用品/食品/玩具</a>
+2018-04-23 10:36:36  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/6.html
+2018-04-23 10:36:40  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/7.html
+2018-04-23 10:36:44  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:36:44  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4e0d5d04]
+2018-04-23 10:36:44  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/8.html
+2018-04-23 10:36:48  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:36:48  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:36:48  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4e0d5d04, com.hpetshop.rest.dto.CatNodeDTO@6afd7a6c]
+2018-04-23 10:36:48  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/9.html
+2018-04-23 10:36:52  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@170a52ce, com.hpetshop.pojo.HpContent@26c25e33, com.hpetshop.pojo.HpContent@22b67a26]
+2018-04-23 10:36:52  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:36:52  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:36:52  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4e0d5d04, com.hpetshop.rest.dto.CatNodeDTO@6afd7a6c, com.hpetshop.rest.dto.CatNodeDTO@f11904b]
+2018-04-23 10:36:52  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@4e0d5d04, com.hpetshop.rest.dto.CatNodeDTO@6afd7a6c, com.hpetshop.rest.dto.CatNodeDTO@f11904b]
+2018-04-23 10:36:52  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6c67c76d, com.hpetshop.rest.dto.CatNodeDTO@4a1833a7]
+2018-04-23 10:36:52  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products10.html'>小鱼/鱼缸/鱼食</a>
+2018-04-23 10:36:52  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/10.html
+2018-04-23 10:36:56  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@6913bbf, com.hpetshop.pojo.HpContent@28e97bf7, com.hpetshop.pojo.HpContent@78c9aa1c, com.hpetshop.pojo.HpContent@7fbf5237, com.hpetshop.pojo.HpContent@69aeda66]
+2018-04-23 10:36:56  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/11.html
+2018-04-23 10:37:00  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:00  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4c9d436]
+2018-04-23 10:37:00  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/12.html
+2018-04-23 10:37:04  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:04  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4c9d436, com.hpetshop.rest.dto.CatNodeDTO@54449f9d]
+2018-04-23 10:37:04  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/13.html
+2018-04-23 10:37:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4c9d436, com.hpetshop.rest.dto.CatNodeDTO@54449f9d, com.hpetshop.rest.dto.CatNodeDTO@4458c75d]
+2018-04-23 10:37:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@4c9d436, com.hpetshop.rest.dto.CatNodeDTO@54449f9d, com.hpetshop.rest.dto.CatNodeDTO@4458c75d]
+2018-04-23 10:37:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6c67c76d, com.hpetshop.rest.dto.CatNodeDTO@4a1833a7, com.hpetshop.rest.dto.CatNodeDTO@2088cdb9]
+2018-04-23 10:37:08  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products14.html'>小鸟/鸟笼/鸟食</a>
+2018-04-23 10:37:08  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/14.html
+2018-04-23 10:37:12  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/15.html
+2018-04-23 10:37:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@282151d9]
+2018-04-23 10:37:16  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/16.html
+2018-04-23 10:37:20  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:20  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@282151d9, com.hpetshop.rest.dto.CatNodeDTO@50fce3db]
+2018-04-23 10:37:20  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/17.html
+2018-04-23 10:37:24  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:24  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@282151d9, com.hpetshop.rest.dto.CatNodeDTO@50fce3db, com.hpetshop.rest.dto.CatNodeDTO@5ace9a23]
+2018-04-23 10:37:24  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@282151d9, com.hpetshop.rest.dto.CatNodeDTO@50fce3db, com.hpetshop.rest.dto.CatNodeDTO@5ace9a23]
+2018-04-23 10:37:24  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6c67c76d, com.hpetshop.rest.dto.CatNodeDTO@4a1833a7, com.hpetshop.rest.dto.CatNodeDTO@2088cdb9, com.hpetshop.rest.dto.CatNodeDTO@31e99e68]
+2018-04-23 10:37:24  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products18.html'>宠物指南/手册/读物</a>
+2018-04-23 10:37:24  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/18.html
+2018-04-23 10:37:28  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/19.html
+2018-04-23 10:37:32  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:32  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@348b9578]
+2018-04-23 10:37:32  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/20.html
+2018-04-23 10:37:36  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:36  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@348b9578, com.hpetshop.rest.dto.CatNodeDTO@32c35350]
+2018-04-23 10:37:36  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/21.html
+2018-04-23 10:37:40  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:37:40  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@348b9578, com.hpetshop.rest.dto.CatNodeDTO@32c35350, com.hpetshop.rest.dto.CatNodeDTO@44c08ac3]
+2018-04-23 10:37:40  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@348b9578, com.hpetshop.rest.dto.CatNodeDTO@32c35350, com.hpetshop.rest.dto.CatNodeDTO@44c08ac3]
+2018-04-23 10:37:40  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6c67c76d, com.hpetshop.rest.dto.CatNodeDTO@4a1833a7, com.hpetshop.rest.dto.CatNodeDTO@2088cdb9, com.hpetshop.rest.dto.CatNodeDTO@31e99e68, com.hpetshop.rest.dto.CatNodeDTO@3cd62b78]
+2018-04-23 10:37:40  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@6c67c76d, com.hpetshop.rest.dto.CatNodeDTO@4a1833a7, com.hpetshop.rest.dto.CatNodeDTO@2088cdb9, com.hpetshop.rest.dto.CatNodeDTO@31e99e68, com.hpetshop.rest.dto.CatNodeDTO@3cd62b78]
+2018-04-23 10:37:40  INFO ItemCatController.getCatList(47) | 返回后的jsonp字符串为category.getDataService({"data":[{"n":"<a href='/products1.html'>狗狗用品/食品/玩具</a>","u":"/products/1.html","i":[{"n":"狗狗用品","u":"/products/2.html","i":["/products/22.html|狗狗沐浴露"]},{"n":"狗狗食品","u":"/products/4.html","i":[]},{"n":"狗狗玩具","u":"/products/5.html","i":[]}]},{"n":"<a href='/products6.html'>猫猫用品/食品/玩具</a>","u":"/products/6.html","i":[{"n":"猫猫用品","u":"/products/7.html","i":[]},{"n":"猫猫食品","u":"/products/8.html","i":[]},{"n":"猫猫玩具","u":"/products/9.html","i":[]}]},{"n":"<a href='/products10.html'>小鱼/鱼缸/鱼食</a>","u":"/products/10.html","i":[{"n":"小鱼","u":"/products/11.html","i":[]},{"n":"鱼缸","u":"/products/12.html","i":[]},{"n":"鱼食","u":"/products/13.html","i":[]}]},{"n":"<a href='/products14.html'>小鸟/鸟笼/鸟食</a>","u":"/products/14.html","i":[{"n":"小鸟","u":"/products/15.html","i":[]},{"n":"鸟笼","u":"/products/16.html","i":[]},{"n":"鸟食","u":"/products/17.html","i":[]}]},{"n":"<a href='/products18.html'>宠物指南/手册/读物</a>","u":"/products/18.html","i":[{"n":"宠物指南","u":"/products/19.html","i":[]},{"n":"宠物手册","u":"/products/20.html","i":[]},{"n":"宠物读物","u":"/products/21.html","i":[]}]}]})
+2018-04-23 10:38:50  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:38:54  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@24fc7682, com.hpetshop.pojo.HpContent@3ac863c6, com.hpetshop.pojo.HpContent@3a0e7a50]
+2018-04-23 10:38:54  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:38:58  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@7f2c3e64, com.hpetshop.pojo.HpContent@31b45876, com.hpetshop.pojo.HpContent@371bc478, com.hpetshop.pojo.HpContent@7fffbe8b, com.hpetshop.pojo.HpContent@6f36d953]
+2018-04-23 10:39:23  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:39:27  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@2c1dd62c, com.hpetshop.pojo.HpContent@5ad7f954, com.hpetshop.pojo.HpContent@19322864]
+2018-04-23 10:39:27  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:39:31  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@4a52a7f, com.hpetshop.pojo.HpContent@7788fa3a, com.hpetshop.pojo.HpContent@41e43325, com.hpetshop.pojo.HpContent@6cd9e3ee, com.hpetshop.pojo.HpContent@55035616]
+2018-04-23 10:39:47  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:39:49  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:39:51  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@13cf38f7, com.hpetshop.pojo.HpContent@9a4ea4a, com.hpetshop.pojo.HpContent@2a11a538]
+2018-04-23 10:39:51  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:39:53  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@699218d7, com.hpetshop.pojo.HpContent@769d0166, com.hpetshop.pojo.HpContent@3dc70c60]
+2018-04-23 10:39:53  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:39:55  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@1bd244a1, com.hpetshop.pojo.HpContent@997b44c, com.hpetshop.pojo.HpContent@46bdee7f, com.hpetshop.pojo.HpContent@5f74f821, com.hpetshop.pojo.HpContent@784e6f7c]
+2018-04-23 10:39:57  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@69388c7b, com.hpetshop.pojo.HpContent@7f8f1534, com.hpetshop.pojo.HpContent@ab94a59, com.hpetshop.pojo.HpContent@ac01e8f, com.hpetshop.pojo.HpContent@4b1643cc]
+2018-04-23 10:40:30  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:40:34  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@3c18aea7, com.hpetshop.pojo.HpContent@787274c3, com.hpetshop.pojo.HpContent@224febfc]
+2018-04-23 10:40:34  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:40:38  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@115be847, com.hpetshop.pojo.HpContent@28ee9638, com.hpetshop.pojo.HpContent@47c84b86, com.hpetshop.pojo.HpContent@2ed66f3b, com.hpetshop.pojo.HpContent@20a283]
+2018-04-23 10:44:01  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:44:04  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products1.html'>狗狗用品/食品/玩具</a>
+2018-04-23 10:44:04  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/1.html
+2018-04-23 10:44:05  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@5eb18ba3, com.hpetshop.pojo.HpContent@5a46aae6, com.hpetshop.pojo.HpContent@557e1057]
+2018-04-23 10:44:05  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:44:08  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/2.html
+2018-04-23 10:44:09  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@47886e43, com.hpetshop.pojo.HpContent@4dff1565, com.hpetshop.pojo.HpContent@25d5c1e4, com.hpetshop.pojo.HpContent@74ac7323, com.hpetshop.pojo.HpContent@65bb3aac]
+2018-04-23 10:44:12  INFO ItemCatService.getItemCatList(136) | 子节点的url为/products/22.html|狗狗沐浴露
+2018-04-23 10:44:12  INFO ItemCatService.getItemCatList(139) | 子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:44:12  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:44:12  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@3e250171]
+2018-04-23 10:44:12  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/4.html
+2018-04-23 10:44:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@3e250171, com.hpetshop.rest.dto.CatNodeDTO@60097724]
+2018-04-23 10:44:16  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/5.html
+2018-04-23 10:44:20  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:20  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@3e250171, com.hpetshop.rest.dto.CatNodeDTO@60097724, com.hpetshop.rest.dto.CatNodeDTO@afaae33]
+2018-04-23 10:44:20  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@3e250171, com.hpetshop.rest.dto.CatNodeDTO@60097724, com.hpetshop.rest.dto.CatNodeDTO@afaae33]
+2018-04-23 10:44:20  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4fc29be6]
+2018-04-23 10:44:20  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products6.html'>猫猫用品/食品/玩具</a>
+2018-04-23 10:44:20  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/6.html
+2018-04-23 10:44:24  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/7.html
+2018-04-23 10:44:28  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:28  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@449b168c]
+2018-04-23 10:44:28  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/8.html
+2018-04-23 10:44:32  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:32  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@449b168c, com.hpetshop.rest.dto.CatNodeDTO@b39258c]
+2018-04-23 10:44:32  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/9.html
+2018-04-23 10:44:36  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:36  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@449b168c, com.hpetshop.rest.dto.CatNodeDTO@b39258c, com.hpetshop.rest.dto.CatNodeDTO@4adfa73f]
+2018-04-23 10:44:36  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@449b168c, com.hpetshop.rest.dto.CatNodeDTO@b39258c, com.hpetshop.rest.dto.CatNodeDTO@4adfa73f]
+2018-04-23 10:44:36  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4fc29be6, com.hpetshop.rest.dto.CatNodeDTO@215d3f80]
+2018-04-23 10:44:36  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products10.html'>小鱼/鱼缸/鱼食</a>
+2018-04-23 10:44:36  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/10.html
+2018-04-23 10:44:40  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/11.html
+2018-04-23 10:44:44  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:44  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6312078b]
+2018-04-23 10:44:44  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/12.html
+2018-04-23 10:44:48  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:48  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6312078b, com.hpetshop.rest.dto.CatNodeDTO@22bfc1f9]
+2018-04-23 10:44:48  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/13.html
+2018-04-23 10:44:52  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:44:52  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@6312078b, com.hpetshop.rest.dto.CatNodeDTO@22bfc1f9, com.hpetshop.rest.dto.CatNodeDTO@79683a28]
+2018-04-23 10:44:52  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@6312078b, com.hpetshop.rest.dto.CatNodeDTO@22bfc1f9, com.hpetshop.rest.dto.CatNodeDTO@79683a28]
+2018-04-23 10:44:52  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4fc29be6, com.hpetshop.rest.dto.CatNodeDTO@215d3f80, com.hpetshop.rest.dto.CatNodeDTO@29c2565d]
+2018-04-23 10:44:52  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products14.html'>小鸟/鸟笼/鸟食</a>
+2018-04-23 10:44:52  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/14.html
+2018-04-23 10:44:56  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/15.html
+2018-04-23 10:45:00  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:45:00  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5abdece4]
+2018-04-23 10:45:00  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/16.html
+2018-04-23 10:45:04  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:45:04  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5abdece4, com.hpetshop.rest.dto.CatNodeDTO@73530840]
+2018-04-23 10:45:04  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/17.html
+2018-04-23 10:45:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:45:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5abdece4, com.hpetshop.rest.dto.CatNodeDTO@73530840, com.hpetshop.rest.dto.CatNodeDTO@7369499]
+2018-04-23 10:45:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@5abdece4, com.hpetshop.rest.dto.CatNodeDTO@73530840, com.hpetshop.rest.dto.CatNodeDTO@7369499]
+2018-04-23 10:45:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4fc29be6, com.hpetshop.rest.dto.CatNodeDTO@215d3f80, com.hpetshop.rest.dto.CatNodeDTO@29c2565d, com.hpetshop.rest.dto.CatNodeDTO@1055cc82]
+2018-04-23 10:45:08  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products18.html'>宠物指南/手册/读物</a>
+2018-04-23 10:45:08  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/18.html
+2018-04-23 10:45:12  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/19.html
+2018-04-23 10:45:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:45:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@476737be]
+2018-04-23 10:45:16  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/20.html
+2018-04-23 10:45:20  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:45:20  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@476737be, com.hpetshop.rest.dto.CatNodeDTO@5ace1a34]
+2018-04-23 10:45:20  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/21.html
+2018-04-23 10:45:25  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:45:25  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@476737be, com.hpetshop.rest.dto.CatNodeDTO@5ace1a34, com.hpetshop.rest.dto.CatNodeDTO@7d92c904]
+2018-04-23 10:45:25  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@476737be, com.hpetshop.rest.dto.CatNodeDTO@5ace1a34, com.hpetshop.rest.dto.CatNodeDTO@7d92c904]
+2018-04-23 10:45:25  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4fc29be6, com.hpetshop.rest.dto.CatNodeDTO@215d3f80, com.hpetshop.rest.dto.CatNodeDTO@29c2565d, com.hpetshop.rest.dto.CatNodeDTO@1055cc82, com.hpetshop.rest.dto.CatNodeDTO@2fcb6604]
+2018-04-23 10:45:25  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@4fc29be6, com.hpetshop.rest.dto.CatNodeDTO@215d3f80, com.hpetshop.rest.dto.CatNodeDTO@29c2565d, com.hpetshop.rest.dto.CatNodeDTO@1055cc82, com.hpetshop.rest.dto.CatNodeDTO@2fcb6604]
+2018-04-23 10:45:25  INFO ItemCatController.getCatList(47) | 返回后的jsonp字符串为category.getDataService({"data":[{"n":"<a href='/products1.html'>狗狗用品/食品/玩具</a>","u":"/products/1.html","i":[{"n":"狗狗用品","u":"/products/2.html","i":["/products/22.html|狗狗沐浴露"]},{"n":"狗狗食品","u":"/products/4.html","i":[]},{"n":"狗狗玩具","u":"/products/5.html","i":[]}]},{"n":"<a href='/products6.html'>猫猫用品/食品/玩具</a>","u":"/products/6.html","i":[{"n":"猫猫用品","u":"/products/7.html","i":[]},{"n":"猫猫食品","u":"/products/8.html","i":[]},{"n":"猫猫玩具","u":"/products/9.html","i":[]}]},{"n":"<a href='/products10.html'>小鱼/鱼缸/鱼食</a>","u":"/products/10.html","i":[{"n":"小鱼","u":"/products/11.html","i":[]},{"n":"鱼缸","u":"/products/12.html","i":[]},{"n":"鱼食","u":"/products/13.html","i":[]}]},{"n":"<a href='/products14.html'>小鸟/鸟笼/鸟食</a>","u":"/products/14.html","i":[{"n":"小鸟","u":"/products/15.html","i":[]},{"n":"鸟笼","u":"/products/16.html","i":[]},{"n":"鸟食","u":"/products/17.html","i":[]}]},{"n":"<a href='/products18.html'>宠物指南/手册/读物</a>","u":"/products/18.html","i":[{"n":"宠物指南","u":"/products/19.html","i":[]},{"n":"宠物手册","u":"/products/20.html","i":[]},{"n":"宠物读物","u":"/products/21.html","i":[]}]}]})
+2018-04-23 10:45:56  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products1.html'>狗狗用品/食品/玩具</a>
+2018-04-23 10:45:56  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/1.html
+2018-04-23 10:46:00  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/2.html
+2018-04-23 10:46:04  INFO ItemCatService.getItemCatList(136) | 子节点的url为/products/22.html|狗狗沐浴露
+2018-04-23 10:46:04  INFO ItemCatService.getItemCatList(139) | 子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:46:04  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:46:04  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@29e4e1ce]
+2018-04-23 10:46:04  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/4.html
+2018-04-23 10:46:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@29e4e1ce, com.hpetshop.rest.dto.CatNodeDTO@6abf06db]
+2018-04-23 10:46:08  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/5.html
+2018-04-23 10:46:12  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:12  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@29e4e1ce, com.hpetshop.rest.dto.CatNodeDTO@6abf06db, com.hpetshop.rest.dto.CatNodeDTO@5ea526fd]
+2018-04-23 10:46:12  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@29e4e1ce, com.hpetshop.rest.dto.CatNodeDTO@6abf06db, com.hpetshop.rest.dto.CatNodeDTO@5ea526fd]
+2018-04-23 10:46:12  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@2ca2dc96]
+2018-04-23 10:46:12  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products6.html'>猫猫用品/食品/玩具</a>
+2018-04-23 10:46:12  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/6.html
+2018-04-23 10:46:16  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/7.html
+2018-04-23 10:46:20  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:20  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5ce95af3]
+2018-04-23 10:46:20  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/8.html
+2018-04-23 10:46:24  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:24  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5ce95af3, com.hpetshop.rest.dto.CatNodeDTO@5e8bb905]
+2018-04-23 10:46:24  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/9.html
+2018-04-23 10:46:28  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:28  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5ce95af3, com.hpetshop.rest.dto.CatNodeDTO@5e8bb905, com.hpetshop.rest.dto.CatNodeDTO@27cacda0]
+2018-04-23 10:46:28  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@5ce95af3, com.hpetshop.rest.dto.CatNodeDTO@5e8bb905, com.hpetshop.rest.dto.CatNodeDTO@27cacda0]
+2018-04-23 10:46:28  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@2ca2dc96, com.hpetshop.rest.dto.CatNodeDTO@7381d7c8]
+2018-04-23 10:46:28  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products10.html'>小鱼/鱼缸/鱼食</a>
+2018-04-23 10:46:28  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/10.html
+2018-04-23 10:46:32  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/11.html
+2018-04-23 10:46:36  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:36  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@39a05afe]
+2018-04-23 10:46:36  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/12.html
+2018-04-23 10:46:40  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:40  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@39a05afe, com.hpetshop.rest.dto.CatNodeDTO@30a21089]
+2018-04-23 10:46:40  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/13.html
+2018-04-23 10:46:44  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:44  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@39a05afe, com.hpetshop.rest.dto.CatNodeDTO@30a21089, com.hpetshop.rest.dto.CatNodeDTO@64f221c7]
+2018-04-23 10:46:44  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@39a05afe, com.hpetshop.rest.dto.CatNodeDTO@30a21089, com.hpetshop.rest.dto.CatNodeDTO@64f221c7]
+2018-04-23 10:46:44  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@2ca2dc96, com.hpetshop.rest.dto.CatNodeDTO@7381d7c8, com.hpetshop.rest.dto.CatNodeDTO@5487c397]
+2018-04-23 10:46:44  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products14.html'>小鸟/鸟笼/鸟食</a>
+2018-04-23 10:46:44  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/14.html
+2018-04-23 10:46:48  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/15.html
+2018-04-23 10:46:52  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:52  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5b3cb441]
+2018-04-23 10:46:52  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/16.html
+2018-04-23 10:46:56  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:46:56  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5b3cb441, com.hpetshop.rest.dto.CatNodeDTO@7aa62c53]
+2018-04-23 10:46:56  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/17.html
+2018-04-23 10:47:00  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:47:00  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5b3cb441, com.hpetshop.rest.dto.CatNodeDTO@7aa62c53, com.hpetshop.rest.dto.CatNodeDTO@63f10200]
+2018-04-23 10:47:00  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@5b3cb441, com.hpetshop.rest.dto.CatNodeDTO@7aa62c53, com.hpetshop.rest.dto.CatNodeDTO@63f10200]
+2018-04-23 10:47:00  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@2ca2dc96, com.hpetshop.rest.dto.CatNodeDTO@7381d7c8, com.hpetshop.rest.dto.CatNodeDTO@5487c397, com.hpetshop.rest.dto.CatNodeDTO@63ba8142]
+2018-04-23 10:47:00  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products18.html'>宠物指南/手册/读物</a>
+2018-04-23 10:47:00  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/18.html
+2018-04-23 10:47:04  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/19.html
+2018-04-23 10:47:08  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:47:08  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@372c8abb]
+2018-04-23 10:47:08  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/20.html
+2018-04-23 10:47:12  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:47:12  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@372c8abb, com.hpetshop.rest.dto.CatNodeDTO@5fcddfbe]
+2018-04-23 10:47:12  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/21.html
+2018-04-23 10:47:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:47:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@372c8abb, com.hpetshop.rest.dto.CatNodeDTO@5fcddfbe, com.hpetshop.rest.dto.CatNodeDTO@5216ca5]
+2018-04-23 10:47:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@372c8abb, com.hpetshop.rest.dto.CatNodeDTO@5fcddfbe, com.hpetshop.rest.dto.CatNodeDTO@5216ca5]
+2018-04-23 10:47:16  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@2ca2dc96, com.hpetshop.rest.dto.CatNodeDTO@7381d7c8, com.hpetshop.rest.dto.CatNodeDTO@5487c397, com.hpetshop.rest.dto.CatNodeDTO@63ba8142, com.hpetshop.rest.dto.CatNodeDTO@5563c744]
+2018-04-23 10:47:16  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@2ca2dc96, com.hpetshop.rest.dto.CatNodeDTO@7381d7c8, com.hpetshop.rest.dto.CatNodeDTO@5487c397, com.hpetshop.rest.dto.CatNodeDTO@63ba8142, com.hpetshop.rest.dto.CatNodeDTO@5563c744]
+2018-04-23 10:47:16  INFO ItemCatController.getCatList(47) | 返回后的jsonp字符串为category.getDataService({"data":[{"n":"<a href='/products1.html'>狗狗用品/食品/玩具</a>","u":"/products/1.html","i":[{"n":"狗狗用品","u":"/products/2.html","i":["/products/22.html|狗狗沐浴露"]},{"n":"狗狗食品","u":"/products/4.html","i":[]},{"n":"狗狗玩具","u":"/products/5.html","i":[]}]},{"n":"<a href='/products6.html'>猫猫用品/食品/玩具</a>","u":"/products/6.html","i":[{"n":"猫猫用品","u":"/products/7.html","i":[]},{"n":"猫猫食品","u":"/products/8.html","i":[]},{"n":"猫猫玩具","u":"/products/9.html","i":[]}]},{"n":"<a href='/products10.html'>小鱼/鱼缸/鱼食</a>","u":"/products/10.html","i":[{"n":"小鱼","u":"/products/11.html","i":[]},{"n":"鱼缸","u":"/products/12.html","i":[]},{"n":"鱼食","u":"/products/13.html","i":[]}]},{"n":"<a href='/products14.html'>小鸟/鸟笼/鸟食</a>","u":"/products/14.html","i":[{"n":"小鸟","u":"/products/15.html","i":[]},{"n":"鸟笼","u":"/products/16.html","i":[]},{"n":"鸟食","u":"/products/17.html","i":[]}]},{"n":"<a href='/products18.html'>宠物指南/手册/读物</a>","u":"/products/18.html","i":[{"n":"宠物指南","u":"/products/19.html","i":[]},{"n":"宠物手册","u":"/products/20.html","i":[]},{"n":"宠物读物","u":"/products/21.html","i":[]}]}]})
+2018-04-23 10:47:28  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:47:32  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@4c754d60, com.hpetshop.pojo.HpContent@292b00d7, com.hpetshop.pojo.HpContent@4644385e]
+2018-04-23 10:47:32  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:47:36  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@26881103, com.hpetshop.pojo.HpContent@2f14efb8, com.hpetshop.pojo.HpContent@786312e, com.hpetshop.pojo.HpContent@7b06c6dd, com.hpetshop.pojo.HpContent@79ea1644]
+2018-04-23 10:47:54  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products1.html'>狗狗用品/食品/玩具</a>
+2018-04-23 10:47:54  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/1.html
+2018-04-23 10:47:58  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/2.html
+2018-04-23 10:48:02  INFO ItemCatService.getItemCatList(136) | 子节点的url为/products/22.html|狗狗沐浴露
+2018-04-23 10:48:02  INFO ItemCatService.getItemCatList(139) | 子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:48:02  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:48:02  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1f785c55]
+2018-04-23 10:48:02  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/4.html
+2018-04-23 10:48:06  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:06  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1f785c55, com.hpetshop.rest.dto.CatNodeDTO@3010c729]
+2018-04-23 10:48:06  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/5.html
+2018-04-23 10:48:10  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:10  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1f785c55, com.hpetshop.rest.dto.CatNodeDTO@3010c729, com.hpetshop.rest.dto.CatNodeDTO@55f45342]
+2018-04-23 10:48:10  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@1f785c55, com.hpetshop.rest.dto.CatNodeDTO@3010c729, com.hpetshop.rest.dto.CatNodeDTO@55f45342]
+2018-04-23 10:48:10  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1b863e24]
+2018-04-23 10:48:10  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products6.html'>猫猫用品/食品/玩具</a>
+2018-04-23 10:48:10  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/6.html
+2018-04-23 10:48:14  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/7.html
+2018-04-23 10:48:18  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:18  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@36fd5d65]
+2018-04-23 10:48:18  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/8.html
+2018-04-23 10:48:22  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:22  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@36fd5d65, com.hpetshop.rest.dto.CatNodeDTO@1658d78a]
+2018-04-23 10:48:22  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/9.html
+2018-04-23 10:48:26  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:26  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@36fd5d65, com.hpetshop.rest.dto.CatNodeDTO@1658d78a, com.hpetshop.rest.dto.CatNodeDTO@2bfee4d8]
+2018-04-23 10:48:26  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@36fd5d65, com.hpetshop.rest.dto.CatNodeDTO@1658d78a, com.hpetshop.rest.dto.CatNodeDTO@2bfee4d8]
+2018-04-23 10:48:26  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1b863e24, com.hpetshop.rest.dto.CatNodeDTO@6b623778]
+2018-04-23 10:48:26  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products10.html'>小鱼/鱼缸/鱼食</a>
+2018-04-23 10:48:26  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/10.html
+2018-04-23 10:48:30  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/11.html
+2018-04-23 10:48:34  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:34  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5721d4eb]
+2018-04-23 10:48:34  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/12.html
+2018-04-23 10:48:38  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:38  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5721d4eb, com.hpetshop.rest.dto.CatNodeDTO@476b288c]
+2018-04-23 10:48:38  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/13.html
+2018-04-23 10:48:43  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:43  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@5721d4eb, com.hpetshop.rest.dto.CatNodeDTO@476b288c, com.hpetshop.rest.dto.CatNodeDTO@1e76f170]
+2018-04-23 10:48:43  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@5721d4eb, com.hpetshop.rest.dto.CatNodeDTO@476b288c, com.hpetshop.rest.dto.CatNodeDTO@1e76f170]
+2018-04-23 10:48:43  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1b863e24, com.hpetshop.rest.dto.CatNodeDTO@6b623778, com.hpetshop.rest.dto.CatNodeDTO@12e4ffb0]
+2018-04-23 10:48:43  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products14.html'>小鸟/鸟笼/鸟食</a>
+2018-04-23 10:48:43  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/14.html
+2018-04-23 10:48:47  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/15.html
+2018-04-23 10:48:51  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:51  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@37af2017]
+2018-04-23 10:48:51  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/16.html
+2018-04-23 10:48:55  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:55  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@37af2017, com.hpetshop.rest.dto.CatNodeDTO@7c42f309]
+2018-04-23 10:48:55  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/17.html
+2018-04-23 10:48:59  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:48:59  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@37af2017, com.hpetshop.rest.dto.CatNodeDTO@7c42f309, com.hpetshop.rest.dto.CatNodeDTO@6660c8b2]
+2018-04-23 10:48:59  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@37af2017, com.hpetshop.rest.dto.CatNodeDTO@7c42f309, com.hpetshop.rest.dto.CatNodeDTO@6660c8b2]
+2018-04-23 10:48:59  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1b863e24, com.hpetshop.rest.dto.CatNodeDTO@6b623778, com.hpetshop.rest.dto.CatNodeDTO@12e4ffb0, com.hpetshop.rest.dto.CatNodeDTO@5c1852a0]
+2018-04-23 10:48:59  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products18.html'>宠物指南/手册/读物</a>
+2018-04-23 10:48:59  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/18.html
+2018-04-23 10:49:03  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/19.html
+2018-04-23 10:49:07  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:49:07  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@32bab3a3]
+2018-04-23 10:49:07  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/20.html
+2018-04-23 10:49:11  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:49:11  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@32bab3a3, com.hpetshop.rest.dto.CatNodeDTO@7ace2d66]
+2018-04-23 10:49:11  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/21.html
+2018-04-23 10:49:15  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:49:15  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@32bab3a3, com.hpetshop.rest.dto.CatNodeDTO@7ace2d66, com.hpetshop.rest.dto.CatNodeDTO@4bc5e628]
+2018-04-23 10:49:15  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@32bab3a3, com.hpetshop.rest.dto.CatNodeDTO@7ace2d66, com.hpetshop.rest.dto.CatNodeDTO@4bc5e628]
+2018-04-23 10:49:15  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@1b863e24, com.hpetshop.rest.dto.CatNodeDTO@6b623778, com.hpetshop.rest.dto.CatNodeDTO@12e4ffb0, com.hpetshop.rest.dto.CatNodeDTO@5c1852a0, com.hpetshop.rest.dto.CatNodeDTO@2d8972f5]
+2018-04-23 10:49:15  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@1b863e24, com.hpetshop.rest.dto.CatNodeDTO@6b623778, com.hpetshop.rest.dto.CatNodeDTO@12e4ffb0, com.hpetshop.rest.dto.CatNodeDTO@5c1852a0, com.hpetshop.rest.dto.CatNodeDTO@2d8972f5]
+2018-04-23 10:49:15  INFO ItemCatController.getCatList(47) | 返回后的jsonp字符串为category.getDataService({"data":[{"n":"<a href='/products1.html'>狗狗用品/食品/玩具</a>","u":"/products/1.html","i":[{"n":"狗狗用品","u":"/products/2.html","i":["/products/22.html|狗狗沐浴露"]},{"n":"狗狗食品","u":"/products/4.html","i":[]},{"n":"狗狗玩具","u":"/products/5.html","i":[]}]},{"n":"<a href='/products6.html'>猫猫用品/食品/玩具</a>","u":"/products/6.html","i":[{"n":"猫猫用品","u":"/products/7.html","i":[]},{"n":"猫猫食品","u":"/products/8.html","i":[]},{"n":"猫猫玩具","u":"/products/9.html","i":[]}]},{"n":"<a href='/products10.html'>小鱼/鱼缸/鱼食</a>","u":"/products/10.html","i":[{"n":"小鱼","u":"/products/11.html","i":[]},{"n":"鱼缸","u":"/products/12.html","i":[]},{"n":"鱼食","u":"/products/13.html","i":[]}]},{"n":"<a href='/products14.html'>小鸟/鸟笼/鸟食</a>","u":"/products/14.html","i":[{"n":"小鸟","u":"/products/15.html","i":[]},{"n":"鸟笼","u":"/products/16.html","i":[]},{"n":"鸟食","u":"/products/17.html","i":[]}]},{"n":"<a href='/products18.html'>宠物指南/手册/读物</a>","u":"/products/18.html","i":[{"n":"宠物指南","u":"/products/19.html","i":[]},{"n":"宠物手册","u":"/products/20.html","i":[]},{"n":"宠物读物","u":"/products/21.html","i":[]}]}]})
+2018-04-23 10:50:16  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:50:20  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@45e7a93d, com.hpetshop.pojo.HpContent@6c1807a5, com.hpetshop.pojo.HpContent@1d9e1914]
+2018-04-23 10:50:20  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:50:24  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@4a7c60b6, com.hpetshop.pojo.HpContent@2bb172ee, com.hpetshop.pojo.HpContent@ef07dab, com.hpetshop.pojo.HpContent@4eca6d36, com.hpetshop.pojo.HpContent@4bc81ca3]
+2018-04-23 10:50:33  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products1.html'>狗狗用品/食品/玩具</a>
+2018-04-23 10:50:33  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/1.html
+2018-04-23 10:50:37  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/2.html
+2018-04-23 10:50:41  INFO ItemCatService.getItemCatList(136) | 子节点的url为/products/22.html|狗狗沐浴露
+2018-04-23 10:50:41  INFO ItemCatService.getItemCatList(139) | 子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:50:41  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[/products/22.html|狗狗沐浴露]
+2018-04-23 10:50:41  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@14793c32]
+2018-04-23 10:50:41  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/4.html
+2018-04-23 10:50:45  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:50:45  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@14793c32, com.hpetshop.rest.dto.CatNodeDTO@4607928c]
+2018-04-23 10:50:45  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/5.html
+2018-04-23 10:50:49  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:50:49  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@14793c32, com.hpetshop.rest.dto.CatNodeDTO@4607928c, com.hpetshop.rest.dto.CatNodeDTO@e70b862]
+2018-04-23 10:50:49  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@14793c32, com.hpetshop.rest.dto.CatNodeDTO@4607928c, com.hpetshop.rest.dto.CatNodeDTO@e70b862]
+2018-04-23 10:50:49  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@a593156]
+2018-04-23 10:50:49  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products6.html'>猫猫用品/食品/玩具</a>
+2018-04-23 10:50:49  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/6.html
+2018-04-23 10:50:53  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/7.html
+2018-04-23 10:50:57  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:50:57  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d005875]
+2018-04-23 10:50:57  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/8.html
+2018-04-23 10:51:01  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:01  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d005875, com.hpetshop.rest.dto.CatNodeDTO@45389082]
+2018-04-23 10:51:01  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/9.html
+2018-04-23 10:51:05  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:05  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@d005875, com.hpetshop.rest.dto.CatNodeDTO@45389082, com.hpetshop.rest.dto.CatNodeDTO@4a7bd0ad]
+2018-04-23 10:51:05  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@d005875, com.hpetshop.rest.dto.CatNodeDTO@45389082, com.hpetshop.rest.dto.CatNodeDTO@4a7bd0ad]
+2018-04-23 10:51:05  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@a593156, com.hpetshop.rest.dto.CatNodeDTO@6c1340f]
+2018-04-23 10:51:05  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products10.html'>小鱼/鱼缸/鱼食</a>
+2018-04-23 10:51:05  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/10.html
+2018-04-23 10:51:09  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/11.html
+2018-04-23 10:51:13  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:13  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4b2944ac]
+2018-04-23 10:51:13  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/12.html
+2018-04-23 10:51:17  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:17  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4b2944ac, com.hpetshop.rest.dto.CatNodeDTO@6f3e667e]
+2018-04-23 10:51:17  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/13.html
+2018-04-23 10:51:21  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:21  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@4b2944ac, com.hpetshop.rest.dto.CatNodeDTO@6f3e667e, com.hpetshop.rest.dto.CatNodeDTO@5fbf1a33]
+2018-04-23 10:51:21  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@4b2944ac, com.hpetshop.rest.dto.CatNodeDTO@6f3e667e, com.hpetshop.rest.dto.CatNodeDTO@5fbf1a33]
+2018-04-23 10:51:21  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@a593156, com.hpetshop.rest.dto.CatNodeDTO@6c1340f, com.hpetshop.rest.dto.CatNodeDTO@7b513b60]
+2018-04-23 10:51:21  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products14.html'>小鸟/鸟笼/鸟食</a>
+2018-04-23 10:51:21  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/14.html
+2018-04-23 10:51:25  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/15.html
+2018-04-23 10:51:29  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:29  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@232fc245]
+2018-04-23 10:51:29  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/16.html
+2018-04-23 10:51:33  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:33  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@232fc245, com.hpetshop.rest.dto.CatNodeDTO@24d33a2d]
+2018-04-23 10:51:33  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/17.html
+2018-04-23 10:51:37  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:37  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@232fc245, com.hpetshop.rest.dto.CatNodeDTO@24d33a2d, com.hpetshop.rest.dto.CatNodeDTO@37e01d82]
+2018-04-23 10:51:37  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@232fc245, com.hpetshop.rest.dto.CatNodeDTO@24d33a2d, com.hpetshop.rest.dto.CatNodeDTO@37e01d82]
+2018-04-23 10:51:37  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@a593156, com.hpetshop.rest.dto.CatNodeDTO@6c1340f, com.hpetshop.rest.dto.CatNodeDTO@7b513b60, com.hpetshop.rest.dto.CatNodeDTO@5ab15e76]
+2018-04-23 10:51:37  INFO ItemCatService.getItemCatList(114) | 顶端节点的name为<a href='/products18.html'>宠物指南/手册/读物</a>
+2018-04-23 10:51:37  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/18.html
+2018-04-23 10:51:41  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/19.html
+2018-04-23 10:51:45  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:45  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@7904cb67]
+2018-04-23 10:51:45  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/20.html
+2018-04-23 10:51:49  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:49  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@7904cb67, com.hpetshop.rest.dto.CatNodeDTO@1d3333e2]
+2018-04-23 10:51:49  INFO ItemCatService.getItemCatList(124) | 父节点的url为/products/21.html
+2018-04-23 10:51:53  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[]
+2018-04-23 10:51:53  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@7904cb67, com.hpetshop.rest.dto.CatNodeDTO@1d3333e2, com.hpetshop.rest.dto.CatNodeDTO@2e9d12fa]
+2018-04-23 10:51:53  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@7904cb67, com.hpetshop.rest.dto.CatNodeDTO@1d3333e2, com.hpetshop.rest.dto.CatNodeDTO@2e9d12fa]
+2018-04-23 10:51:53  INFO ItemCatService.getItemCatList(129) | 父resultList[com.hpetshop.rest.dto.CatNodeDTO@a593156, com.hpetshop.rest.dto.CatNodeDTO@6c1340f, com.hpetshop.rest.dto.CatNodeDTO@7b513b60, com.hpetshop.rest.dto.CatNodeDTO@5ab15e76, com.hpetshop.rest.dto.CatNodeDTO@4a48f2fe]
+2018-04-23 10:51:53  INFO ItemCatService.getItemCatList(145) | 总或者子resultList[com.hpetshop.rest.dto.CatNodeDTO@a593156, com.hpetshop.rest.dto.CatNodeDTO@6c1340f, com.hpetshop.rest.dto.CatNodeDTO@7b513b60, com.hpetshop.rest.dto.CatNodeDTO@5ab15e76, com.hpetshop.rest.dto.CatNodeDTO@4a48f2fe]
+2018-04-23 10:51:53  INFO ItemCatController.getCatList(47) | 返回后的jsonp字符串为category.getDataService({"data":[{"n":"<a href='/products1.html'>狗狗用品/食品/玩具</a>","u":"/products/1.html","i":[{"n":"狗狗用品","u":"/products/2.html","i":["/products/22.html|狗狗沐浴露"]},{"n":"狗狗食品","u":"/products/4.html","i":[]},{"n":"狗狗玩具","u":"/products/5.html","i":[]}]},{"n":"<a href='/products6.html'>猫猫用品/食品/玩具</a>","u":"/products/6.html","i":[{"n":"猫猫用品","u":"/products/7.html","i":[]},{"n":"猫猫食品","u":"/products/8.html","i":[]},{"n":"猫猫玩具","u":"/products/9.html","i":[]}]},{"n":"<a href='/products10.html'>小鱼/鱼缸/鱼食</a>","u":"/products/10.html","i":[{"n":"小鱼","u":"/products/11.html","i":[]},{"n":"鱼缸","u":"/products/12.html","i":[]},{"n":"鱼食","u":"/products/13.html","i":[]}]},{"n":"<a href='/products14.html'>小鸟/鸟笼/鸟食</a>","u":"/products/14.html","i":[{"n":"小鸟","u":"/products/15.html","i":[]},{"n":"鸟笼","u":"/products/16.html","i":[]},{"n":"鸟食","u":"/products/17.html","i":[]}]},{"n":"<a href='/products18.html'>宠物指南/手册/读物</a>","u":"/products/18.html","i":[{"n":"宠物指南","u":"/products/19.html","i":[]},{"n":"宠物手册","u":"/products/20.html","i":[]},{"n":"宠物读物","u":"/products/21.html","i":[]}]}]})
+2018-04-23 10:59:08  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:59:10  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:59:12  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@5b2e149a, com.hpetshop.pojo.HpContent@2e4ab93a, com.hpetshop.pojo.HpContent@2bc6a694]
+2018-04-23 10:59:12  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:59:14  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@7e19f832, com.hpetshop.pojo.HpContent@5af5db4b, com.hpetshop.pojo.HpContent@43104794]
+2018-04-23 10:59:14  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:59:17  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@c757ef8, com.hpetshop.pojo.HpContent@75e2d22b, com.hpetshop.pojo.HpContent@7e544183, com.hpetshop.pojo.HpContent@4d994040, com.hpetshop.pojo.HpContent@849518d]
+2018-04-23 10:59:18  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@6a57ee8c, com.hpetshop.pojo.HpContent@32ee5fdf, com.hpetshop.pojo.HpContent@3fd84398, com.hpetshop.pojo.HpContent@f3dd0e7, com.hpetshop.pojo.HpContent@235df582]
+2018-04-23 10:59:19  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 10:59:23  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@4513c272, com.hpetshop.pojo.HpContent@1442edcc, com.hpetshop.pojo.HpContent@3609f678]
+2018-04-23 10:59:23  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 10:59:27  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@35448c0d, com.hpetshop.pojo.HpContent@2746c4cd, com.hpetshop.pojo.HpContent@172282e0, com.hpetshop.pojo.HpContent@5abe4bfd, com.hpetshop.pojo.HpContent@36efd96]
+2018-04-23 11:00:20  INFO ContentController.getContent(52) | 获取到的categoryId89
+2018-04-23 11:00:24  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@29b9eab3, com.hpetshop.pojo.HpContent@6cdfa32b, com.hpetshop.pojo.HpContent@4e5193e4]
+2018-04-23 11:00:24  INFO ContentController.getContent(52) | 获取到的categoryId90
+2018-04-23 11:00:28  INFO ContentController.getContent(54) | 发送表现层的list[com.hpetshop.pojo.HpContent@32dd9ee7, com.hpetshop.pojo.HpContent@73eb69c7, com.hpetshop.pojo.HpContent@646dc345, com.hpetshop.pojo.HpContent@622f1a85, com.hpetshop.pojo.HpContent@276441f]
