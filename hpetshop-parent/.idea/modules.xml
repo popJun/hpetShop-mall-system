@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-common/hpetshop-common.iml" filepath="$PROJECT_DIR$/../hpetshop-common/hpetshop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager.iml" filepath="$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-mapper/hpetshop-manager-mapper.iml" filepath="$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-mapper/hpetshop-manager-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-pojo/hpetshop-manager-pojo.iml" filepath="$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-pojo/hpetshop-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-service/hpetshop-manager-service.iml" filepath="$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-service/hpetshop-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-web/hpetshop-manager-web.iml" filepath="$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-web/hpetshop-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-order/hpetshop-order.iml" filepath="$PROJECT_DIR$/../hpetshop-order/hpetshop-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hpetshop-parent.iml" filepath="$PROJECT_DIR$/hpetshop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-protal/hpetshop-protal.iml" filepath="$PROJECT_DIR$/../hpetshop-protal/hpetshop-protal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-rest/hpetshop-rest.iml" filepath="$PROJECT_DIR$/../hpetshop-rest/hpetshop-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-search/hpetshop-search.iml" filepath="$PROJECT_DIR$/../hpetshop-search/hpetshop-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hpetshop-sso/hpetshop-sso.iml" filepath="$PROJECT_DIR$/../hpetshop-sso/hpetshop-sso.iml" />
+    </modules>
+  </component>
+</project>
