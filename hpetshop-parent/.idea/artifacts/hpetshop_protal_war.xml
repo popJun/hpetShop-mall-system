@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hpetshop-protal:war">
+    <output-path>$PROJECT_DIR$/../hpetshop-protal/target</output-path>
+    <root id="archive" name="hpetshop-protal.war">
+      <element id="artifact" artifact-name="hpetshop-protal:war exploded" />
+    </root>
+  </artifact>
+</component>

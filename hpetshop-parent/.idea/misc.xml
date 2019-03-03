@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../hpetshop-order" />
+    <file type="web" url="file://$PROJECT_DIR$/../hpetshop-protal" />
+    <file type="web" url="file://$PROJECT_DIR$/../hpetshop-rest" />
+    <file type="web" url="file://$PROJECT_DIR$/../hpetshop-search" />
+    <file type="web" url="file://$PROJECT_DIR$/../hpetshop-sso" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-search/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshopsso/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-protal/pom.xml" />
+        <option value="$PROJECT_DIR$/../hpetshop-order/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
