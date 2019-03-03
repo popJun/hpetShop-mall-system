@@ -1,0 +1,11 @@
+com\hpetshop\search\dto\ItemDTO.class
+com\hpetshop\search\controller\SolrItemController.class
+com\hpetshop\search\service\impl\SolrItemServiceImpl.class
+com\hpetshop\search\dao\SearchDAO.class
+com\hpetshop\search\service\impl\SearchServiceImpl.class
+com\hpetshop\search\mapper\ItemMapper.class
+com\hpetshop\search\dao\impl\SearchDAOImpl.class
+com\hpetshop\search\dto\SearchResult.class
+com\hpetshop\search\service\SearchService.class
+com\hpetshop\search\service\SolrItemService.class
+com\hpetshop\search\controller\SearchCotroller.class

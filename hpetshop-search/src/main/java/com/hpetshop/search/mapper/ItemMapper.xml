@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- namespace为类权限命名 -->
+<mapper namespace="com.hpetshop.search.mapper.ItemMapper">
+<select id="getItem" resultType="com.hpetshop.search.dto.ItemDTO">
+SELECT
+			a.id,
+			a.title,
+			a.sell_point,
+			a.price,
+			a.image,
+			b. NAME category_name
+		FROM
+			hp_item a
+		LEFT JOIN hp_item_cat b ON a.cid = b.id;
+</select>
+
+<select id="getItemById" resultType="com.hpetshop.search.dto.ItemDTO">
+SELECT
+			a.id,
+			a.title,
+			a.sell_point,
+			a.price,
+			a.image,
+			b. NAME category_name
+		FROM
+			hp_item a
+		LEFT JOIN hp_item_cat b ON a.cid = b.id
+		where a.id=#{itemId};
+</select>
+</mapper>

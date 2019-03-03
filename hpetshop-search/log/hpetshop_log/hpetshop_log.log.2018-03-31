@@ -1,0 +1,19 @@
+2018-03-31 09:41:52  INFO ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+2018-03-31 09:41:53  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Sat Mar 31 09:41:53 CST 2018]; root of context hierarchy
+2018-03-31 09:41:53  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [E:\Workspaces\MyEclipse\hpetshop-search\target\classes\spring\applicationContext-dao.xml]
+2018-03-31 09:41:55  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [E:\Workspaces\MyEclipse\hpetshop-search\target\classes\spring\applicationContext-service.xml]
+2018-03-31 09:41:56  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [E:\Workspaces\MyEclipse\hpetshop-search\target\classes\resource\jdbc.properties]
+2018-03-31 09:41:56  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [E:\Workspaces\MyEclipse\hpetshop-search\target\classes\resource\solr.properties]
+2018-03-31 09:41:56  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-31 09:42:00  INFO ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 8011 ms
+2018-03-31 09:42:01  INFO DispatcherServlet.initServletBean(484) | FrameworkServlet 'hpetshop-search': initialization started
+2018-03-31 09:42:01  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'hpetshop-search-servlet': startup date [Sat Mar 31 09:42:01 CST 2018]; parent: Root WebApplicationContext
+2018-03-31 09:42:01  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2018-03-31 09:42:01  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-31 09:42:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/query],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.search.controller.SearchCotroller.search(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-03-31 09:42:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/solr/manager/importall],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.search.controller.SolrItemController.importItemToSolr()
+2018-03-31 09:42:01  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-search-servlet': startup date [Sat Mar 31 09:42:01 CST 2018]; parent: Root WebApplicationContext
+2018-03-31 09:42:01  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-search-servlet': startup date [Sat Mar 31 09:42:01 CST 2018]; parent: Root WebApplicationContext
+2018-03-31 09:42:01  INFO DispatcherServlet.initServletBean(503) | FrameworkServlet 'hpetshop-search': initialization completed in 764 ms
+2018-03-31 09:52:12  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'hpetshop-search'
+2018-03-31 10:19:04  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/user/showLogin] in DispatcherServlet with name 'hpetshop-search'
