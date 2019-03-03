@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="hpetshop-manager-web:war">
-    <output-path>$PROJECT_DIR$/../hpetshop-manager/hpetshop-manager-web/target</output-path>
-    <root id="archive" name="hpetshop-manager-web.war">
-      <element id="artifact" artifact-name="hpetshop-manager-web:war exploded" />
-    </root>
-  </artifact>
-</component>
