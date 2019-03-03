@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- 引入配置文件 -->
+	<properties resource="resource/jdbc.properties" />
+
+	<!-- 指定数据连接驱动jar地址 -->
+	<classPathEntry location="${classPath}" />
+
+	<!-- 一个数据库一个context -->
+	<context id="SSMDemo">
+		<!-- 注释 -->
+		<commentGenerator>
+			<property name="suppressAllComments" value="false" /><!-- 是否取消注释 -->
+			<property name="suppressDate" value="true" /> <!-- 是否生成注释代时间戳 -->
+		</commentGenerator>
+
+		<!-- jdbc连接 -->
+		<jdbcConnection driverClass="${driver}"
+			connectionURL="${url}" userId="${name}" password="${password}" />
+			<!-- 类型转换 -->
+		<javaTypeResolver>
+			<!-- 是否使用bigDecimal， false可自动转化以下类型（Long, Integer, Short, etc.） -->
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		
+		<!-- 生成实体类地址 -->
+		<javaModelGenerator targetPackage="com.hpetshop.pojo"
+			targetProject="${pojoProject}">
+			<!-- 是否在当前路径下新加一层schema,eg：false路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
+			<property name="enableSubPackages" value="false" />
+			<!-- 是否针对string类型的字段在set的时候进行trim调用 -->
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		
+		<!-- 生成mapxml文件 -->
+		<sqlMapGenerator targetPackage="com.hpetshop.mapper"
+			targetProject="${mapperProject}">
+			<!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		
+		<!-- 生成mapxml对应client，也就是接口dao -->
+		<javaClientGenerator targetPackage="com.hpetshop.mapper"
+			targetProject="${mapperProject}" type="XMLMAPPER">
+			<!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+		<table schema="test" tableName="hp_content" domainObjectName="HpContent"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_content_category" domainObjectName="HpContentCategory"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+			<!-- 用于插入是返回主键值 -->
+			   <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table>
+		<table schema="test" tableName="hp_item" domainObjectName="HpItem"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_item_cat" domainObjectName="HpItemCat"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_item_desc" domainObjectName="HpItemDesc"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_item_param" domainObjectName="HpItemParam"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_item_param_item" domainObjectName="HpItemParamItem"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_order" domainObjectName="HpOrder"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_order_item" domainObjectName="HpOrderItem"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_order_shipping" domainObjectName="HpOrderShipping"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+		<table schema="test" tableName="hp_user" domainObjectName="HpUser"
+			enableCountByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" enableUpdateByExample="true">
+		</table>
+			</context>
+</generatorConfiguration>

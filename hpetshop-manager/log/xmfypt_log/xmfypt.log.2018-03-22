@@ -1,0 +1,327 @@
+2018-03-22 19:51:09  INFO ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+2018-03-22 19:51:09  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Thu Mar 22 19:51:09 CST 2018]; root of context hierarchy
+2018-03-22 19:51:09  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\spring\applicationContext-dao.xml]
+2018-03-22 19:51:09  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\spring\applicationContext-service.xml]
+2018-03-22 19:51:09  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\resource\ftp.properties]
+2018-03-22 19:51:09  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\resource\jdbc.properties]
+2018-03-22 19:51:09  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-22 19:51:11  INFO ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 2171 ms
+2018-03-22 19:51:11  INFO DispatcherServlet.initServletBean(484) | FrameworkServlet 'hpetshop-manager': initialization started
+2018-03-22 19:51:11  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 19:51:11 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 19:51:11  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2018-03-22 19:51:11  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.hpetshop.dto.CMSTreeNodeDTO> com.hpetshop.controller.ContentcategoryController.getContentcategroy(java.lang.Long)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/create],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.insertContentcategroy(java.lang.Long,java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.updateContentcategroyName(java.lang.Long,java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.deleteContentcategroy(long)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/query/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.dto.AllPageDTO com.hpetshop.controller.ContentController.getContent(java.lang.Integer,java.lang.Integer,java.lang.Long)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/save],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.saveContent(com.hpetshop.pojo.HpContent)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/rest/content/edit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.updateContent(com.hpetshop.pojo.HpContent)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.deleteConent(java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/cat/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.hpetshop.dto.TypeNodeDTO> com.hpetshop.controller.ItemCatController.getItemCatList(java.lang.Long)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/instock],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItemInstock(java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/reshelf],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItemReshelf(java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.saveItem(com.hpetshop.pojo.HpItem,java.lang.String,java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.dto.AllPageDTO com.hpetshop.controller.ItemController.getItemList(java.lang.Integer,java.lang.Integer)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/delete],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.deleteItem(java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.pojo.HpItem com.hpetshop.controller.ItemController.getItemById(java.lang.Long)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItem(com.hpetshop.pojo.HpItem,java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/param/query/itemcatid/{itemCatId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemParamController.findItemParamByItemCatId(java.lang.Long)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/param/save/{itemCatId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemParamController.insertItemParam(java.lang.Long,java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/show/item/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.ItemParamItemController.getItemParamItemById(java.lang.Long,org.springframework.ui.Model)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PageContorller.showIndex()
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/{page}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PageContorller.showpage(java.lang.String)
+2018-03-22 19:51:11  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/pic/upload],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PicController.PicUpdate(org.springframework.web.multipart.MultipartFile)
+2018-03-22 19:51:12  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 19:51:11 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 19:51:12  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 19:51:11 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 19:51:12  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 19:51:12  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 19:51:12  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 19:51:12  INFO DispatcherServlet.initServletBean(503) | FrameworkServlet 'hpetshop-manager': initialization completed in 963 ms
+2018-03-22 21:15:02  INFO ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+2018-03-22 21:15:02  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Thu Mar 22 21:15:02 CST 2018]; root of context hierarchy
+2018-03-22 21:15:02  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\spring\applicationContext-dao.xml]
+2018-03-22 21:15:02  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\spring\applicationContext-service.xml]
+2018-03-22 21:15:03  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\resource\ftp.properties]
+2018-03-22 21:15:03  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\resource\jdbc.properties]
+2018-03-22 21:15:03  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-22 21:15:05  INFO ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 3273 ms
+2018-03-22 21:15:05  INFO DispatcherServlet.initServletBean(484) | FrameworkServlet 'hpetshop-manager': initialization started
+2018-03-22 21:15:05  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 21:15:05 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 21:15:05  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2018-03-22 21:15:05  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.hpetshop.dto.CMSTreeNodeDTO> com.hpetshop.controller.ContentcategoryController.getContentcategroy(java.lang.Long)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/create],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.insertContentcategroy(java.lang.Long,java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.updateContentcategroyName(java.lang.Long,java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.deleteContentcategroy(long)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/query/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.dto.AllPageDTO com.hpetshop.controller.ContentController.getContent(java.lang.Integer,java.lang.Integer,java.lang.Long)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/save],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.saveContent(com.hpetshop.pojo.HpContent)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/rest/content/edit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.updateContent(com.hpetshop.pojo.HpContent)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.deleteConent(java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/cat/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.hpetshop.dto.TypeNodeDTO> com.hpetshop.controller.ItemCatController.getItemCatList(java.lang.Long)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.saveItem(com.hpetshop.pojo.HpItem,java.lang.String,java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.dto.AllPageDTO com.hpetshop.controller.ItemController.getItemList(java.lang.Integer,java.lang.Integer)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/delete],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.deleteItem(java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.pojo.HpItem com.hpetshop.controller.ItemController.getItemById(java.lang.Long)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItem(com.hpetshop.pojo.HpItem,java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/instock],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItemInstock(java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/reshelf],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItemReshelf(java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/param/query/itemcatid/{itemCatId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemParamController.findItemParamByItemCatId(java.lang.Long)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/param/save/{itemCatId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemParamController.insertItemParam(java.lang.Long,java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/show/item/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.ItemParamItemController.getItemParamItemById(java.lang.Long,org.springframework.ui.Model)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PageContorller.showIndex()
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/{page}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PageContorller.showpage(java.lang.String)
+2018-03-22 21:15:06  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/pic/upload],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PicController.PicUpdate(org.springframework.web.multipart.MultipartFile)
+2018-03-22 21:15:06  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 21:15:05 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 21:15:06  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 21:15:05 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 21:15:06  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 21:15:06  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 21:15:06  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 21:15:06  INFO DispatcherServlet.initServletBean(503) | FrameworkServlet 'hpetshop-manager': initialization completed in 1338 ms
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@593a5ae0
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@593a5ae0]
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@686f6ec9
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@686f6ec9]
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6a8e0d54
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6a8e0d54]
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3d82aae1
+2018-03-22 21:15:16  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@3d82aae1]
+2018-03-22 21:15:18  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@52c79a
+2018-03-22 21:15:18  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3aae4fa0
+2018-03-22 21:15:18  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@9edaf79
+2018-03-22 21:15:18  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@52c79a, com.hpetshop.dto.CMSTreeNodeDTO@3aae4fa0, com.hpetshop.dto.CMSTreeNodeDTO@9edaf79]
+2018-03-22 21:15:19  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@420a707
+2018-03-22 21:15:19  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@7bb5beae
+2018-03-22 21:15:19  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@420a707, com.hpetshop.dto.CMSTreeNodeDTO@7bb5beae]
+2018-03-22 21:25:11  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@68e518d4
+2018-03-22 21:25:11  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@68e518d4]
+2018-03-22 21:25:11  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@e25d60c
+2018-03-22 21:25:11  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@e25d60c]
+2018-03-22 21:25:12  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@638da56c
+2018-03-22 21:25:12  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@68678883
+2018-03-22 21:25:12  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@65338601
+2018-03-22 21:25:12  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@638da56c, com.hpetshop.dto.CMSTreeNodeDTO@68678883, com.hpetshop.dto.CMSTreeNodeDTO@65338601]
+2018-03-22 21:25:14  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6d56a595
+2018-03-22 21:25:14  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@53911147
+2018-03-22 21:25:14  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6d56a595, com.hpetshop.dto.CMSTreeNodeDTO@53911147]
+2018-03-22 21:25:15  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@738ab353
+2018-03-22 21:25:15  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@738ab353]
+2018-03-22 21:25:15  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@41d695fc
+2018-03-22 21:25:15  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@41d695fc]
+2018-03-22 21:25:18  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@e689d81
+2018-03-22 21:25:18  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@763c878a
+2018-03-22 21:25:18  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@7fe6b1aa
+2018-03-22 21:25:18  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@e689d81, com.hpetshop.dto.CMSTreeNodeDTO@763c878a, com.hpetshop.dto.CMSTreeNodeDTO@7fe6b1aa]
+2018-03-22 21:25:19  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3d82e11a
+2018-03-22 21:25:19  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5b889182
+2018-03-22 21:25:19  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@3d82e11a, com.hpetshop.dto.CMSTreeNodeDTO@5b889182]
+2018-03-22 21:32:54  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@68bb8a45
+2018-03-22 21:32:54  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@68bb8a45]
+2018-03-22 21:32:54  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@4aa799cf
+2018-03-22 21:32:54  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@4aa799cf]
+2018-03-22 21:32:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@498c1366
+2018-03-22 21:32:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@b4db343
+2018-03-22 21:32:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@1a33f981
+2018-03-22 21:32:56  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@498c1366, com.hpetshop.dto.CMSTreeNodeDTO@b4db343, com.hpetshop.dto.CMSTreeNodeDTO@1a33f981]
+2018-03-22 21:32:57  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6a729834
+2018-03-22 21:32:57  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@966b485
+2018-03-22 21:32:57  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6a729834, com.hpetshop.dto.CMSTreeNodeDTO@966b485]
+2018-03-22 21:53:59  INFO ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+2018-03-22 21:53:59  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Thu Mar 22 21:53:59 CST 2018]; root of context hierarchy
+2018-03-22 21:53:59  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\spring\applicationContext-dao.xml]
+2018-03-22 21:53:59  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\spring\applicationContext-service.xml]
+2018-03-22 21:54:00  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\resource\ftp.properties]
+2018-03-22 21:54:00  INFO PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [C:\Users\Administrator\Desktop\临时文件夹\hj\hpetshop-manager\hpetshop-manager-web\target\classes\resource\jdbc.properties]
+2018-03-22 21:54:00  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-22 21:54:01  INFO ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 2023 ms
+2018-03-22 21:54:01  INFO DispatcherServlet.initServletBean(484) | FrameworkServlet 'hpetshop-manager': initialization started
+2018-03-22 21:54:01  INFO XmlWebApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 21:54:01 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 21:54:01  INFO XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2018-03-22 21:54:01  INFO AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.hpetshop.dto.CMSTreeNodeDTO> com.hpetshop.controller.ContentcategoryController.getContentcategroy(java.lang.Long)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/create],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.insertContentcategroy(java.lang.Long,java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/update],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.updateContentcategroyName(java.lang.Long,java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/category/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentcategoryController.deleteContentcategroy(long)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/query/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.dto.AllPageDTO com.hpetshop.controller.ContentController.getContent(java.lang.Integer,java.lang.Integer,java.lang.Long)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.deleteConent(java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/content/save],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.saveContent(com.hpetshop.pojo.HpContent)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/rest/content/edit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ContentController.updateContent(com.hpetshop.pojo.HpContent)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/cat/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.hpetshop.dto.TypeNodeDTO> com.hpetshop.controller.ItemCatController.getItemCatList(java.lang.Long)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/instock],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItemInstock(java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/reshelf],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItemReshelf(java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.saveItem(com.hpetshop.pojo.HpItem,java.lang.String,java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.dto.AllPageDTO com.hpetshop.controller.ItemController.getItemList(java.lang.Integer,java.lang.Integer)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/delete],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.deleteItem(java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.pojo.HpItem com.hpetshop.controller.ItemController.getItemById(java.lang.Long)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemController.updateItem(com.hpetshop.pojo.HpItem,java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/param/query/itemcatid/{itemCatId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemParamController.findItemParamByItemCatId(java.lang.Long)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/item/param/save/{itemCatId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.hpetshop.utils.Result com.hpetshop.controller.ItemParamController.insertItemParam(java.lang.Long,java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/show/item/{itemId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.ItemParamItemController.getItemParamItemById(java.lang.Long,org.springframework.ui.Model)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PageContorller.showIndex()
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/{page}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PageContorller.showpage(java.lang.String)
+2018-03-22 21:54:01  INFO RequestMappingHandlerMapping.registerHandlerMethod(220) | Mapped "{[/pic/upload],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hpetshop.controller.PicController.PicUpdate(org.springframework.web.multipart.MultipartFile)
+2018-03-22 21:54:02  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 21:54:01 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 21:54:02  INFO RequestMappingHandlerAdapter.initControllerAdviceCache(518) | Looking for @ControllerAdvice: WebApplicationContext for namespace 'hpetshop-manager-servlet': startup date [Thu Mar 22 21:54:01 CST 2018]; parent: Root WebApplicationContext
+2018-03-22 21:54:02  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 21:54:02  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 21:54:02  INFO SimpleUrlHandlerMapping.registerHandler(314) | Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 21:54:02  INFO DispatcherServlet.initServletBean(503) | FrameworkServlet 'hpetshop-manager': initialization completed in 1034 ms
+2018-03-22 21:54:16  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/hpetshopmanager/item/param/list] in DispatcherServlet with name 'hpetshop-manager'
+2018-03-22 21:54:23  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@40855dd2
+2018-03-22 21:54:23  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@40855dd2]
+2018-03-22 21:54:23  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@686f6ec9
+2018-03-22 21:54:23  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@686f6ec9]
+2018-03-22 21:54:25  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6b0ede92
+2018-03-22 21:54:25  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6b0ede92]
+2018-03-22 21:54:25  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@19a2df8f
+2018-03-22 21:54:25  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@19a2df8f]
+2018-03-22 21:54:26  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@62e5472a
+2018-03-22 21:54:26  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3aa3491f
+2018-03-22 21:54:26  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3615b04c
+2018-03-22 21:54:26  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@62e5472a, com.hpetshop.dto.CMSTreeNodeDTO@3aa3491f, com.hpetshop.dto.CMSTreeNodeDTO@3615b04c]
+2018-03-22 21:54:27  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@661e4597
+2018-03-22 21:54:27  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@4d6af0e1
+2018-03-22 21:54:27  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@661e4597, com.hpetshop.dto.CMSTreeNodeDTO@4d6af0e1]
+2018-03-22 21:59:12  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2fc0de63
+2018-03-22 21:59:12  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2fc0de63]
+2018-03-22 21:59:12  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@20d4caa7
+2018-03-22 21:59:12  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@20d4caa7]
+2018-03-22 21:59:14  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@45d77660
+2018-03-22 21:59:14  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@45d77660]
+2018-03-22 21:59:14  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@60ad1a5e
+2018-03-22 21:59:14  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@60ad1a5e]
+2018-03-22 21:59:17  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@390f35d3
+2018-03-22 21:59:17  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@390f35d3]
+2018-03-22 21:59:17  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@95f51f0
+2018-03-22 21:59:17  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@95f51f0]
+2018-03-22 22:00:55  INFO ItemService.saveItem(114) | -----------添加到商品表成功-----------------
+2018-03-22 22:00:55  INFO ItemService.saveItem(118) | 商品规格json[]
+2018-03-22 22:00:55  INFO ItemService.saveItem(120) | ---------添加到商品描述表成功，事务结束----------
+2018-03-22 22:02:29  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/hpetshopmanager/item/param/list] in DispatcherServlet with name 'hpetshop-manager'
+2018-03-22 22:02:47  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@4d9a927
+2018-03-22 22:02:47  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@4d9a927]
+2018-03-22 22:02:47  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5ea10f07
+2018-03-22 22:02:47  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@5ea10f07]
+2018-03-22 22:02:49  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@27d13881
+2018-03-22 22:02:49  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@18d4b193
+2018-03-22 22:02:49  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@33d636a1
+2018-03-22 22:02:49  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@27d13881, com.hpetshop.dto.CMSTreeNodeDTO@18d4b193, com.hpetshop.dto.CMSTreeNodeDTO@33d636a1]
+2018-03-22 22:02:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@792b9365
+2018-03-22 22:02:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@1bda0a09
+2018-03-22 22:02:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@792b9365, com.hpetshop.dto.CMSTreeNodeDTO@1bda0a09]
+2018-03-22 22:02:53  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2ed0a748
+2018-03-22 22:02:53  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2ed0a748]
+2018-03-22 22:02:53  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2173951c
+2018-03-22 22:02:53  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2173951c]
+2018-03-22 22:02:54  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@a5c5190
+2018-03-22 22:02:54  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@32eeca40
+2018-03-22 22:02:54  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5b2049df
+2018-03-22 22:02:54  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@a5c5190, com.hpetshop.dto.CMSTreeNodeDTO@32eeca40, com.hpetshop.dto.CMSTreeNodeDTO@5b2049df]
+2018-03-22 22:02:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@61391860
+2018-03-22 22:02:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6b6f787d
+2018-03-22 22:02:56  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@61391860, com.hpetshop.dto.CMSTreeNodeDTO@6b6f787d]
+2018-03-22 22:36:03  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@4861e35d
+2018-03-22 22:36:03  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@4861e35d]
+2018-03-22 22:36:03  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6aab6594
+2018-03-22 22:36:03  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6aab6594]
+2018-03-22 22:39:51  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@109e3c43
+2018-03-22 22:39:51  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@109e3c43]
+2018-03-22 22:39:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@75c73ba1
+2018-03-22 22:39:52  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@75c73ba1]
+2018-03-22 22:39:53  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@255325b
+2018-03-22 22:39:53  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@255325b]
+2018-03-22 22:39:53  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@19bf6e71
+2018-03-22 22:39:53  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@19bf6e71]
+2018-03-22 22:39:55  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3832f4bb
+2018-03-22 22:39:55  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@19613dd0
+2018-03-22 22:39:55  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3f212fb4
+2018-03-22 22:39:55  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@3832f4bb, com.hpetshop.dto.CMSTreeNodeDTO@19613dd0, com.hpetshop.dto.CMSTreeNodeDTO@3f212fb4]
+2018-03-22 22:39:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@8e69813
+2018-03-22 22:39:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5b0a0bf5
+2018-03-22 22:39:56  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@8e69813, com.hpetshop.dto.CMSTreeNodeDTO@5b0a0bf5]
+2018-03-22 22:49:42  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/hpetshopmanager/item/param/list] in DispatcherServlet with name 'hpetshop-manager'
+2018-03-22 22:49:43  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3a039adb
+2018-03-22 22:49:43  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@3a039adb]
+2018-03-22 22:49:43  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@654c5cb5
+2018-03-22 22:49:43  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@654c5cb5]
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6f4e934f
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6f4e934f]
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@31b3e966
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@31b3e966]
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3098197f
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@3098197f]
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@7d3aca15
+2018-03-22 22:49:44  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@7d3aca15]
+2018-03-22 22:49:45  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2966e80c
+2018-03-22 22:49:45  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@230c8110
+2018-03-22 22:49:45  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@9ed536a
+2018-03-22 22:49:45  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2966e80c, com.hpetshop.dto.CMSTreeNodeDTO@230c8110, com.hpetshop.dto.CMSTreeNodeDTO@9ed536a]
+2018-03-22 22:49:46  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@43583bb9
+2018-03-22 22:49:46  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@55b91139
+2018-03-22 22:49:46  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@43583bb9, com.hpetshop.dto.CMSTreeNodeDTO@55b91139]
+2018-03-22 22:49:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@7bc99aff
+2018-03-22 22:49:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@7bc99aff]
+2018-03-22 22:49:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5768d2ea
+2018-03-22 22:49:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@5768d2ea]
+2018-03-22 22:49:51  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@41e76f7
+2018-03-22 22:49:51  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6c14543d
+2018-03-22 22:49:51  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2aa6a83a
+2018-03-22 22:49:51  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@41e76f7, com.hpetshop.dto.CMSTreeNodeDTO@6c14543d, com.hpetshop.dto.CMSTreeNodeDTO@2aa6a83a]
+2018-03-22 22:49:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@77cc2975
+2018-03-22 22:49:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@7cb5fdc4
+2018-03-22 22:49:52  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@77cc2975, com.hpetshop.dto.CMSTreeNodeDTO@7cb5fdc4]
+2018-03-22 22:50:51  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2a5c58ae
+2018-03-22 22:50:51  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2a5c58ae]
+2018-03-22 22:50:51  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@79c27756
+2018-03-22 22:50:51  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@79c27756]
+2018-03-22 22:50:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2b25f2be
+2018-03-22 22:50:52  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2b25f2be]
+2018-03-22 22:50:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@1bbaf4ed
+2018-03-22 22:50:52  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@1bbaf4ed]
+2018-03-22 22:56:44  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/hpetshopmanager/item/param/list] in DispatcherServlet with name 'hpetshop-manager'
+2018-03-22 22:56:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6aa5bb09
+2018-03-22 22:56:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6aa5bb09]
+2018-03-22 22:56:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@3c3c0cb7
+2018-03-22 22:56:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@3c3c0cb7]
+2018-03-22 22:56:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@4176126c
+2018-03-22 22:56:52  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@4176126c]
+2018-03-22 22:56:52  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@629e2d3f
+2018-03-22 22:56:52  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@629e2d3f]
+2018-03-22 22:58:16  INFO ItemService.saveItem(114) | -----------添加到商品表成功-----------------
+2018-03-22 22:58:16  INFO ItemService.saveItem(118) | 商品规格json[]
+2018-03-22 22:58:16  INFO ItemService.saveItem(120) | ---------添加到商品描述表成功，事务结束----------
+2018-03-22 23:05:15  INFO ItemService.saveItem(114) | -----------添加到商品表成功-----------------
+2018-03-22 23:05:15  INFO ItemService.saveItem(118) | 商品规格json[]
+2018-03-22 23:05:15  INFO ItemService.saveItem(120) | ---------添加到商品描述表成功，事务结束----------
+2018-03-22 23:05:47  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/hpetshopmanager/item/param/list] in DispatcherServlet with name 'hpetshop-manager'
+2018-03-22 23:05:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@17e10967
+2018-03-22 23:05:56  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@17e10967]
+2018-03-22 23:05:56  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@7e231da4
+2018-03-22 23:05:56  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@7e231da4]
+2018-03-22 23:05:57  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2df4dffb
+2018-03-22 23:05:57  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@279cef4f
+2018-03-22 23:05:57  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@30233fda
+2018-03-22 23:05:57  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2df4dffb, com.hpetshop.dto.CMSTreeNodeDTO@279cef4f, com.hpetshop.dto.CMSTreeNodeDTO@30233fda]
+2018-03-22 23:05:59  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2bfcc11e
+2018-03-22 23:05:59  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5eeaaf21
+2018-03-22 23:05:59  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2bfcc11e, com.hpetshop.dto.CMSTreeNodeDTO@5eeaaf21]
+2018-03-22 23:06:03  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@724010b6
+2018-03-22 23:06:03  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@724010b6]
+2018-03-22 23:06:07  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@6717d886
+2018-03-22 23:06:07  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@6717d886]
+2018-03-22 23:06:07  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@2a166d9d
+2018-03-22 23:06:07  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@2a166d9d]
+2018-03-22 23:06:08  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@89c8adb
+2018-03-22 23:06:08  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@5d603447
+2018-03-22 23:06:08  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@57085135
+2018-03-22 23:06:08  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@89c8adb, com.hpetshop.dto.CMSTreeNodeDTO@5d603447, com.hpetshop.dto.CMSTreeNodeDTO@57085135]
+2018-03-22 23:06:14  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@59f30e51
+2018-03-22 23:06:14  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@643115f9
+2018-03-22 23:06:14  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@59f30e51, com.hpetshop.dto.CMSTreeNodeDTO@643115f9]
+2018-03-22 23:07:48  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@31aa6131
+2018-03-22 23:07:48  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@31aa6131]
+2018-03-22 23:07:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@aeeb1ba
+2018-03-22 23:07:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@aeeb1ba]
+2018-03-22 23:07:50  INFO ContentcategoryService.getContentcategroy(72) | 返回的子节点为：com.hpetshop.dto.CMSTreeNodeDTO@4d037f9d
+2018-03-22 23:07:50  INFO ContentcategoryService.getContentcategroy(75) | 返回的list为：[com.hpetshop.dto.CMSTreeNodeDTO@4d037f9d]
+2018-03-22 23:07:51  WARN PageNotFound.noHandlerFound(1120) | No mapping found for HTTP request with URI [/hpetshopmanager/item/param/list] in DispatcherServlet with name 'hpetshop-manager'
